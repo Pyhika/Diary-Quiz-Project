@@ -6,6 +6,7 @@ Frontend/diary-quiz-app/.idea/
 Backend/diary_quiz_app/.idea/
 Backend/diary_quiz_app/db.sql
 Backend/diary_quiz_qpp/diary_quiz/
+Backend/diary_quiz_qpp/htmlcov/
 .idea/
 
 # デフォルトの無視ファイル
