@@ -5,6 +5,8 @@ Frontend/diary-quiz-app/node_modules/
 Frontend/diary-quiz-app/.idea/
 Backend/diary_quiz_app/.idea/
 Backend/diary_quiz_app/db.sql
+Backend/diary_quiz_qpp/diary_quiz/
+.idea/
 
 # デフォルトの無視ファイル
 /shelf/
