@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'history_app.apps.HistoryAppConfig',
 ]
 
 MIDDLEWARE = [
