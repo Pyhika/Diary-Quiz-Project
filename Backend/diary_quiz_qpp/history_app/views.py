@@ -1,7 +1,5 @@
-from django.shortcuts import render
-
 from rest_framework.authentication import TokenAuthentication
-from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.permissions import IsAuthenticated
 from rest_framework import generics
 from django.contrib.auth.models import User
 from .models import History
@@ -13,7 +11,7 @@ from .ownpermissions import ProfilePermission
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    permissions_classes = (ProfilePermission,)
+    permission_classes = (ProfilePermission,)
 
 
 class ManageUserView(generics.RetrieveUpdateAPIView):

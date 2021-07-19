@@ -16,11 +16,29 @@ class UserSerializer(serializers.ModelSerializer):
         return user
 
 
-class HistorySerializer(serializers.HyperlinkedModelSerializer):
+class HistorySerializer(serializers.ModelSerializer):
 
     created_at = serializers.DateTimeField(format="%Y-%m-%d %H:%M", read_only=True)
     updated_at = serializers.DateTimeField(format="%Y-%m-%d %H:%M", read_only=True)
 
     class Meta:
         model = History
-        fields ={'id', 'title', 'summary', 'created_at', 'updated_at'}
+        fields = ('id',
+                  'title',
+                  'summary',
+                  'ContentSubtitle1',
+                  'Content1',
+                  'ContentSubtitle2',
+                  'Content2',
+                  'ContentSubtitle3',
+                  'Content3',
+                  'ContentSubtitle4',
+                  'Content4',
+                  'ContentSubtitle5',
+                  'Content5',
+                  'images',
+                  'category',
+                  'author',
+                  'created_at',
+                  'updated_at',
+                  )
